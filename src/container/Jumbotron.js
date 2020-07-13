@@ -8,7 +8,7 @@ import img3 from '../images/woman-in-front-of-her-computer-3059745.jpg';
 const Jumbotron = () => {
     return (
         <div>
-            <Section paddingTop='pt-5'>
+            <Section paddingTop='pt-5' classes="row mr-sm-auto ml-sm-auto">
                 <div className="col-md-6 header-aside">
                     <div className="header">
                         <h2>Find a technical and non-technical <span className="xblue">co-founder</span> for your startup, idea or existing business</h2>
@@ -28,13 +28,13 @@ const Jumbotron = () => {
                 </div>
 
                 <div className="col-md-6 pic-aside">
-                    <div className="picc-aside"></div>
-                        <div className="row" style={{ marginRight: -80 }}>
-                            <div className="col-md-4 ximg" style={{ backgroundImage: `url(${img1})`, height: 220 }}></div>
-                            <div className="col-md-6 ximg" style={{ backgroundImage: `url(${img2})`, width: '100%', marginTop: -30, marginRight: -30 }}></div>
+                    <div className="picc-aside d-none d-lg-block d-lg-none"></div>
+                        <div className="row" style={{ justifyContent: "flex-end" }}>
+                            <div className="col-md-5 ximg" style={{ backgroundImage: `url(${img1})`, height: 220, flex: 1 }}></div>
+                            <div className="col-md-6 ximg" style={{ backgroundImage: `url(${img2})`, width: '100%', marginTop: -30, marginRight: -15, flex: 1 }}></div>
                         </div>
                         <div className="row mt-5 ml-1">
-                            <div className="col-md-12 ximg" style={{ backgroundImage: `url(${img3})`, width: '100%', minHeight: 470, marginTop: -30 }}></div>
+                            <div className="col-md-12 ximg" style={{ backgroundImage: `url(${img3})`, width: '100%', minHeight: 400, marginTop: -30 }}></div>
                         </div>        
                 </div>
             </Section>
